@@ -9,17 +9,17 @@ With this API you can query:
 
 ## Getting started
 Supported platforms:  
-  Web [ ✅ ]
+  ✅ Web
   
-  Windows [ ✅ ] 
+  ✅ Windows
   
-  MacOS [ ✅ ] 
+  ✅ MacOS
   
-  Linux [ ✅ ] 
+  ✅ Linux
   
-  Android [ ✅ ] 
+  ✅ Android
   
-  iOS [ ✅ ]
+  ✅ iOS
 
 ## Usage
 
