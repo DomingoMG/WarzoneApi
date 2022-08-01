@@ -36,7 +36,7 @@ WarzoneData warzoneData = await warzoneApi.search(username: "RaiiLKilleR#8661004
 
 ### There are several platforms to find the user
 ```dart
- enum Platform {
+enum Platform {
   /// [atvi] : Activision users
   atvi,
 
