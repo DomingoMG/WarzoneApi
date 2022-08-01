@@ -1,6 +1,6 @@
-### Unofficial API for Call of Duty: Warzone, this plugin does not guarantee 100% functionality, as it may change.
-
 ![](https://github.com/DomingoMG/WarzoneApi/blob/main/assets/warzone_logo.png?raw=true)
+
+### Unofficial API for Call of Duty: Warzone, this plugin does not guarantee 100% functionality, as it may change.
 
 ## API functionality
 With this API you can query:
