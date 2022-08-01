@@ -1,4 +1,4 @@
-Unofficial API for Call of Duty: Warzone, this plugin does not guarantee 100% functionality, as it may change.
+### Unofficial API for Call of Duty: Warzone, this plugin does not guarantee 100% functionality, as it may change.
 
 ## API functionality
 With this API you can query:
