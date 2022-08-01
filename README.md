@@ -45,4 +45,4 @@ WarzoneData warzoneData = await warzoneApi.search(username: "RaiiLKilleR#8661004
 
   /// [battlenet] : battlenet users
   battlenet 
-```#
+```
