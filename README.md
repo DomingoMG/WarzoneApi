@@ -9,7 +9,12 @@ With this API you can query:
 
 ## Getting started
 Supported platforms:  
-  Web [ ✅ ] Windows [ ✅ ] MacOS [ ✅ ] Linux [ ✅ ] Android [ ✅ ] iOS [ ✅ ]
+  Web [ ✅ ] 
+  Windows [ ✅ ] 
+  MacOS [ ✅ ] 
+  Linux [ ✅ ] 
+  Android [ ✅ ] 
+  iOS [ ✅ ]
 
 ## Usage
 
