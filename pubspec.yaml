@@ -1,5 +1,5 @@
 name: warzone_api
-description: Unofficial Call of Duty Warzone API.
+description: Unofficial API for Call of Duty Warzone, this plugin does not guarantee 100% functionality, as it may change.
 version: 1.0.2
 homepage: https://github.com/DomingoMG/WarzoneApi
 
