@@ -26,13 +26,17 @@ Supported platforms:
 ```dart
 /// [WarzoneApi] Instance
 WarzoneApi warzoneApi = WarzoneApi();
+```
 
+```dart
 /// [WarzoneData] All user data found
 WarzoneData warzoneData = await warzoneApi.search(username: "RaiiLKilleR#8661004", platform: Platform.atvi);
 ```
 
+
 ### There are several platforms to find the user
 ```dart
+ enum Platform {
   /// [atvi] : Activision users
   atvi,
 
@@ -44,4 +48,5 @@ WarzoneData warzoneData = await warzoneApi.search(username: "RaiiLKilleR#8661004
 
   /// [battlenet] : battlenet users
   battlenet 
+}
 ```
