@@ -8,3 +8,4 @@
 library warzone_api;
 
 export 'src/warzone_api_base.dart';
+export 'src/enums/enums.dart';

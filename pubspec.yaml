@@ -1,6 +1,6 @@
 name: warzone_api
 description: Unofficial Call of Duty Warzone API.
-version: 1.0.0
+version: 1.0.2
 homepage: https://github.com/DomingoMG/WarzoneApi
 
 environment:
