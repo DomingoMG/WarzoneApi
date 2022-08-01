@@ -9,35 +9,27 @@ import 'package:warzone_api/src/models/lifetime/metadata.dart';
 import 'package:warzone_api/src/models/lifetime/stats.dart';
 
 class Lifetime {
-
   String? type;
   Map<String, dynamic>? attributes = {};
   Metadata? metadata;
   String? expiryDate;
   Stats? stats;
 
-  Lifetime({
-    this.type,
-    this.attributes,
-    this.metadata,
-    this.expiryDate,
-    this.stats
-  });
+  Lifetime(
+      {this.type, this.attributes, this.metadata, this.expiryDate, this.stats});
 
-  factory Lifetime.fromMap( Map<String, dynamic> json ) => Lifetime(
-    type: json['type'],
-    attributes: json['attributes'] ?? {},
-    metadata: Metadata.fromMap( json['metadata'] ),
-    expiryDate: json['expiryDate'],
-    stats: Stats.fromMap( json['stats'] )
-  );
+  factory Lifetime.fromMap(Map<String, dynamic> json) => Lifetime(
+      type: json['type'],
+      attributes: json['attributes'] ?? {},
+      metadata: Metadata.fromMap(json['metadata']),
+      expiryDate: json['expiryDate'],
+      stats: Stats.fromMap(json['stats']));
 
   Map<String, dynamic> toMap() => {
-    'type': type,
-    'attributes': attributes,
-    'metadata': metadata?.toMap(),
-    'expiryDate': expiryDate,
-    'stats': stats?.toMap()
-  };
-
+        'type': type,
+        'attributes': attributes,
+        'metadata': metadata?.toMap(),
+        'expiryDate': expiryDate,
+        'stats': stats?.toMap()
+      };
 }

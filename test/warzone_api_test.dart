@@ -9,9 +9,8 @@ import 'package:warzone_api/src/models/warzone_data.dart';
 import 'package:warzone_api/src/warzone_api_base.dart';
 
 void main() async {
-  
   WarzoneApi warzoneApi = WarzoneApi();
 
-  WarzoneData? warzoneData = await warzoneApi.search(username: 'RaiiLKilleR#8661004');
-  
+  WarzoneData? warzoneData =
+      await warzoneApi.search(username: 'RaiiLKilleR#8661004');
 }

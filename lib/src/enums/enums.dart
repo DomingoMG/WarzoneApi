@@ -7,16 +7,15 @@
 
 /// [Platform] Platform to perform the search
 enum Platform {
-  
   /// [atvi] : Activision users
   atvi,
 
   /// [psn] : Playstation users
   psn,
-  
+
   /// [xbl] : Xbox Live users
-  xbl, 
+  xbl,
 
   /// [battlenet] : battlenet users
-  battlenet 
+  battlenet
 }

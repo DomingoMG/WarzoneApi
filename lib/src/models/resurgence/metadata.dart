@@ -5,17 +5,13 @@
 /// Use of this source code is governed by MIT license that can be found in the LICENSE file.
 ///
 
-
 class Metadata {
   String? name;
 
-  Metadata({ this.name });
+  Metadata({this.name});
 
-  factory Metadata.fromMap( Map<String, dynamic> json ) => Metadata(
-    name: json['name']
-  );
+  factory Metadata.fromMap(Map<String, dynamic> json) =>
+      Metadata(name: json['name']);
 
-  Map<String, dynamic> toMap() => {
-    'name': name
-  };
+  Map<String, dynamic> toMap() => {'name': name};
 }

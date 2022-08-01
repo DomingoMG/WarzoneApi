@@ -13,30 +13,28 @@ class PlatformInfo {
   String? platformAvatarUrl;
   String? additionalParameters;
 
-  PlatformInfo({
-    required this.platformSlug,
-    required this.platformUserId,
-    required this.platformUserHandle,
-    required this.platformUserIdentifier,
-    required this.platformAvatarUrl,
-    required this.additionalParameters
-  });
+  PlatformInfo(
+      {required this.platformSlug,
+      required this.platformUserId,
+      required this.platformUserHandle,
+      required this.platformUserIdentifier,
+      required this.platformAvatarUrl,
+      required this.additionalParameters});
 
-  factory PlatformInfo.fromMap( Map<String, dynamic> json ) => PlatformInfo(
-    platformSlug: json['platformSlug'],
-    platformUserId: json['platformUserId'],
-    platformUserHandle: json['platformUserHandle'],
-    platformUserIdentifier: json['platformUserIdentifier'],
-    platformAvatarUrl: json['platformAvatarUrl'],
-    additionalParameters: json['additionalParameters']
-  );
+  factory PlatformInfo.fromMap(Map<String, dynamic> json) => PlatformInfo(
+      platformSlug: json['platformSlug'],
+      platformUserId: json['platformUserId'],
+      platformUserHandle: json['platformUserHandle'],
+      platformUserIdentifier: json['platformUserIdentifier'],
+      platformAvatarUrl: json['platformAvatarUrl'],
+      additionalParameters: json['additionalParameters']);
 
   Map<String, dynamic> toMap() => {
-    'platformSlug': platformSlug,
-    'platformUserId': platformUserId,
-    'platformUserHandle': platformUserHandle,
-    'platformUserIdentifier': platformUserIdentifier,
-    'platformAvatarUrl': platformAvatarUrl,
-    'additionalParameters': additionalParameters
-  };
+        'platformSlug': platformSlug,
+        'platformUserId': platformUserId,
+        'platformUserHandle': platformUserHandle,
+        'platformUserIdentifier': platformUserIdentifier,
+        'platformAvatarUrl': platformAvatarUrl,
+        'additionalParameters': additionalParameters
+      };
 }

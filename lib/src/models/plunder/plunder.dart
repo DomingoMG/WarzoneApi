@@ -9,35 +9,27 @@ import 'package:warzone_api/src/models/plunder/metadata.dart';
 import 'package:warzone_api/src/models/plunder/stats.dart';
 
 class Plunder {
-
   String? type;
   Map<String, dynamic>? attributes = {};
   Metadata? metadata;
   String? expiryDate;
   Stats? stats;
 
-  Plunder({
-    this.type,
-    this.attributes,
-    this.metadata,
-    this.expiryDate,
-    this.stats
-  });
+  Plunder(
+      {this.type, this.attributes, this.metadata, this.expiryDate, this.stats});
 
-  factory Plunder.fromMap( Map<String, dynamic> json ) => Plunder(
-    type: json['type'],
-    attributes: json['attributes'] ?? {},
-    metadata: Metadata.fromMap( json['metadata'] ),
-    expiryDate: json['expiryDate'],
-    stats: Stats.fromMap( json['stats'] )
-  );
+  factory Plunder.fromMap(Map<String, dynamic> json) => Plunder(
+      type: json['type'],
+      attributes: json['attributes'] ?? {},
+      metadata: Metadata.fromMap(json['metadata']),
+      expiryDate: json['expiryDate'],
+      stats: Stats.fromMap(json['stats']));
 
   Map<String, dynamic> toMap() => {
-    'type': type,
-    'attributes': attributes,
-    'metadata': metadata?.toMap(),
-    'expiryDate': expiryDate,
-    'stats': stats?.toMap()
-  };
-
+        'type': type,
+        'attributes': attributes,
+        'metadata': metadata?.toMap(),
+        'expiryDate': expiryDate,
+        'stats': stats?.toMap()
+      };
 }

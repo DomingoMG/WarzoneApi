@@ -5,9 +5,7 @@
 /// Use of this source code is governed by MIT license that can be found in the LICENSE file.
 ///
 
-
 class UserInfo {
-  
   String? userId;
   bool? isPremium;
   bool? isVerified;
@@ -20,46 +18,43 @@ class UserInfo {
   int? pageviews;
   bool? isSuspicious;
 
-  UserInfo({
-    this.userId,
-    this.isPremium,
-    this.isVerified,
-    this.isInfluencer,
-    this.isPartner,
-    this.countryCode,
-    this.customAvatarUrl,
-    this.customHeroUrl,
-    this.socialAccounts,
-    this.pageviews,
-    this.isSuspicious
-  });
+  UserInfo(
+      {this.userId,
+      this.isPremium,
+      this.isVerified,
+      this.isInfluencer,
+      this.isPartner,
+      this.countryCode,
+      this.customAvatarUrl,
+      this.customHeroUrl,
+      this.socialAccounts,
+      this.pageviews,
+      this.isSuspicious});
 
-  factory UserInfo.fromMap( Map<String, dynamic> json ) => UserInfo(
-    userId: json['userId'],
-    isPremium: json['isPremium'],
-    isVerified: json['isVerified'],
-    isInfluencer: json['isInfluencer'],
-    isPartner: json['isPartner'],
-    countryCode: json['countryCode'],
-    customAvatarUrl: json['customAvatarUrl'],
-    customHeroUrl: json['customHeroUrl'],
-    socialAccounts: json['socialAccounts'] ?? [],
-    pageviews: json['pageviews'],
-    isSuspicious: json['isSuspicious']
-  );
+  factory UserInfo.fromMap(Map<String, dynamic> json) => UserInfo(
+      userId: json['userId'],
+      isPremium: json['isPremium'],
+      isVerified: json['isVerified'],
+      isInfluencer: json['isInfluencer'],
+      isPartner: json['isPartner'],
+      countryCode: json['countryCode'],
+      customAvatarUrl: json['customAvatarUrl'],
+      customHeroUrl: json['customHeroUrl'],
+      socialAccounts: json['socialAccounts'] ?? [],
+      pageviews: json['pageviews'],
+      isSuspicious: json['isSuspicious']);
 
   Map<String, dynamic> toMap() => {
-    'userId': userId,
-    'isPremium': isPremium,
-    'isVerified': isVerified,
-    'isInfluencer': isInfluencer,
-    'isPartner': isPartner,
-    'countryCode': countryCode,
-    'customAvatarUrl': customAvatarUrl,
-    'customHeroUrl': customHeroUrl,
-    'socialAccounts': socialAccounts?.map((e) => e).toList(),
-    'pageviews': pageviews,
-    'isSuspicious': isSuspicious,
-  };
-
+        'userId': userId,
+        'isPremium': isPremium,
+        'isVerified': isVerified,
+        'isInfluencer': isInfluencer,
+        'isPartner': isPartner,
+        'countryCode': countryCode,
+        'customAvatarUrl': customAvatarUrl,
+        'customHeroUrl': customHeroUrl,
+        'socialAccounts': socialAccounts?.map((e) => e).toList(),
+        'pageviews': pageviews,
+        'isSuspicious': isSuspicious,
+      };
 }
