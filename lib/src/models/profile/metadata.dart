@@ -44,7 +44,7 @@ class OtherTitles {
   OtherTitles({this.warzone});
 
   factory OtherTitles.fromMap(Map<String, dynamic> json) =>
-      OtherTitles(warzone: Warzone.fromMap(json['warzone']));
+      OtherTitles(warzone: json.containsKey('warzone') ? Warzone.fromMap(json['warzone']) : null );
 
   Map<String, dynamic> toMap() => {'warzone': warzone?.toMap()};
 }

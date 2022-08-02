@@ -1,3 +1,6 @@
+## 1.0.8
+- Key check before getting value
+
 ## 1.0.7
 - Warzone Search fixed
 
