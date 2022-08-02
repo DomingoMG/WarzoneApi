@@ -25,28 +25,27 @@ Supported platforms:
 
 ## Usage
 
+### [WarzoneApi] Instance
 ```dart
-/// [WarzoneApi] Instance
 WarzoneApi warzoneApi = WarzoneApi();
 ```
 
+### [WarzoneSearch] Search players by name and platform
 ```dart
-/// [WarzoneSearch] Search players by name and platform
 List<WarzoneSearch> usersFounds = await warzoneApi.fetchUser(username: "RaiiLKilleR#8661004", platform: Platform.atvi);
 ```
 
+### [WarzoneProfile] Consult the data of a player
 ```dart
-/// [WarzoneProfile] Consult the data of a player
 WarzoneProfile warzoneProfile = await warzoneApi.search(username: "RaiiLKilleR", platform: Platform.atvi);
 ```
 
+### [WarzoneMatch] Get the user's last played games
 ```dart
-/// [WarzoneMatch] Get the user's last played games
 List<WarzoneMatch> matchsFounds = await warzoneApi.fetchMatchesPlayedFromUser(username: "RaiiLKilleR#8661004", platform: Platform.atvi);
 ```
-
+### [WarzoneMatch] Get information about the game played
 ```dart
-/// [WarzoneMatch] Get information about the game played
 WarzoneMatch matchFound = await warzoneApi.fetchMatchFromUser(attributeIdFromMatch: '10005806731254879321');
 ```
 
