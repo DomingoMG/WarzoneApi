@@ -11,4 +11,4 @@ export 'src/warzone_api_base.dart';
 export 'src/enums/enums.dart';
 export 'src/models/warzone_profile.dart';
 export 'src/models/warzone_matchs.dart';
-export 'src/models//warzone_search.dart';
+export 'src/models/warzone_search.dart';

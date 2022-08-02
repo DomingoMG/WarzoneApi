@@ -1,3 +1,6 @@
+## 1.0.7
+- Warzone Search fixed
+
 ## 1.0.6
 - Updated Readme
 - WarzoneData is now called WarzoneProfile
