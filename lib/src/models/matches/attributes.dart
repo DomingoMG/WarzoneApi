@@ -21,7 +21,9 @@ class Attributes {
     mapId = json['mapId'].toString();
     modeId = json['modeId'].toString();
     avgKd = json['avgKd'] != null ? AvgKd.fromMap(json['avgKd']) : null;
-    kdHistogram = json['kdHistogram'] != null ? KdHistogram.fromMap( json['kdHistogram'] ) : null;
+    kdHistogram = json['kdHistogram'] != null
+        ? KdHistogram.fromMap(json['kdHistogram'])
+        : null;
   }
 
   Map<String, dynamic> toMap() {

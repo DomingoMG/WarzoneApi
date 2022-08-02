@@ -24,9 +24,8 @@ class Metadata {
       this.modeName});
 
   Metadata.fromMap(Map<String, dynamic> json) {
-    duration = json['duration'] != null
-        ? Duration.fromMap(json['duration'])
-        : null;
+    duration =
+        json['duration'] != null ? Duration.fromMap(json['duration']) : null;
     timestamp = json['timestamp'].toString();
     playerCount = json['playerCount'];
     teamCount = json['teamCount'];

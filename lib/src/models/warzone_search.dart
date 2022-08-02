@@ -39,13 +39,13 @@ class WarzoneSearch {
   }
 
   Map<String, dynamic> toMap() => {
-    'platformId': platformId,
-    'platformSlug': platformSlug,
-    'platformUserIdentifier': platformUserIdentifier,
-    'platformUserId': platformUserId,
-    'platformUserHandle': platformUserHandle,
-    'avatarUrl': avatarUrl,
-    'status': status,
-    'additionalParameters': additionalParameters
-  };
+        'platformId': platformId,
+        'platformSlug': platformSlug,
+        'platformUserIdentifier': platformUserIdentifier,
+        'platformUserId': platformUserId,
+        'platformUserHandle': platformUserHandle,
+        'avatarUrl': avatarUrl,
+        'status': status,
+        'additionalParameters': additionalParameters
+      };
 }

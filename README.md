@@ -30,12 +30,12 @@ Supported platforms:
 WarzoneApi warzoneApi = WarzoneApi();
 ```
 
-### [WarzoneSearch] Search players by name and platform
+### [WarzoneSearch] Consult the data of a player
 ```dart
 List<WarzoneSearch> usersFounds = await warzoneApi.fetchUser(username: "RaiiLKilleR#8661004", platform: Platform.atvi);
 ```
 
-### [WarzoneProfile] Consult the data of a player
+### [WarzoneProfile] Search players by name and platform
 ```dart
 WarzoneProfile warzoneProfile = await warzoneApi.search(username: "RaiiLKilleR", platform: Platform.atvi);
 ```
@@ -44,6 +44,7 @@ WarzoneProfile warzoneProfile = await warzoneApi.search(username: "RaiiLKilleR",
 ```dart
 List<WarzoneMatch> matchsFounds = await warzoneApi.fetchMatchesPlayedFromUser(username: "RaiiLKilleR#8661004", platform: Platform.atvi);
 ```
+
 ### [WarzoneMatch] Get information about the game played
 ```dart
 WarzoneMatch matchFound = await warzoneApi.fetchMatchFromUser(attributeIdFromMatch: '10005806731254879321');

@@ -15,27 +15,21 @@ class Segments {
   String? expiryDate;
   Stats? stats;
 
-  Segments({
-    this.type,
-    this.attributes,
-    this.metadata,
-    this.expiryDate,
-    this.stats
-  });
+  Segments(
+      {this.type, this.attributes, this.metadata, this.expiryDate, this.stats});
 
-  factory Segments.fromMap( List json ) => Segments(
-    type: json[0]['type'],
-    attributes: SegmentAttributes.fromMap( json[0]['attributes'] ),
-    metadata: SegmentMetadata.fromMap( json[0]['metadata'] ),
-    expiryDate: json[0]['expiryDate'],
-    stats: Stats.fromMap( json[0]['stats'] )
-  );
+  factory Segments.fromMap(List json) => Segments(
+      type: json[0]['type'],
+      attributes: SegmentAttributes.fromMap(json[0]['attributes']),
+      metadata: SegmentMetadata.fromMap(json[0]['metadata']),
+      expiryDate: json[0]['expiryDate'],
+      stats: Stats.fromMap(json[0]['stats']));
 
   Map<String, dynamic> toMap() => {
-    'type': type,
-    'attributes': attributes?.toMap(),
-    'metadata': metadata?.toMap(),
-    'expiryDate': expiryDate,
-    'stats': stats?.toMap()
-  };
+        'type': type,
+        'attributes': attributes?.toMap(),
+        'metadata': metadata?.toMap(),
+        'expiryDate': expiryDate,
+        'stats': stats?.toMap()
+      };
 }

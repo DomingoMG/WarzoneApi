@@ -6,12 +6,12 @@ class WarzoneMatch {
   Segments? segments;
   String? expiryDate;
 
-   WarzoneMatch(
-      {this.attributes,
-      this.metadata,
-      this.segments,
-      this.expiryDate,
-    });
+  WarzoneMatch({
+    this.attributes,
+    this.metadata,
+    this.segments,
+    this.expiryDate,
+  });
 
   factory WarzoneMatch.notFound() => WarzoneMatch();
 
@@ -22,9 +22,9 @@ class WarzoneMatch {
       expiryDate: json['expiryDate']);
 
   Map<String, dynamic> toMap() => {
-    'attributes': attributes?.toMap(),
-    'metadata': metadata?.toMap(),
-    'segments': segments?.toMap(),
-    'expiryDate': expiryDate
-  };
+        'attributes': attributes?.toMap(),
+        'metadata': metadata?.toMap(),
+        'segments': segments?.toMap(),
+        'expiryDate': expiryDate
+      };
 }

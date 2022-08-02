@@ -21,6 +21,6 @@ class Segments {
   factory Segments.fromMap(List datas) => Segments(
       lifetime: datas.isNotEmpty ? Lifetime.fromMap(datas[0]) : null,
       br: datas.length >= 2 ? Br.fromMap(datas[1]) : null,
-      plunder: datas.length >=3 ? Plunder.fromMap(datas[2]) : null,
-      resurgence: datas.length >=4 ? Resurgence.fromMap(datas[3]) : null);
+      plunder: datas.length >= 3 ? Plunder.fromMap(datas[2]) : null,
+      resurgence: datas.length >= 4 ? Resurgence.fromMap(datas[3]) : null);
 }

@@ -27,16 +27,20 @@ class PercentTimeMoving {
       this.displayValue,
       this.displayType});
 
-  factory PercentTimeMoving.fromMap(Map<String, dynamic> json) => PercentTimeMoving(
-      rank: json['rank'],
-      percentile: json['percentile'],
-      displayName: json['displayName'],
-      displayCategory: json['displayCategory'],
-      category: json['category'],
-      metadata: json['metadata'] ?? {},
-      value: json['value'] != null ? double.parse(json['value'].toString()) : 0,
-      displayValue: json['displayValue'],
-      displayType: json['displayType']);
+  factory PercentTimeMoving.fromMap(
+          Map<String, dynamic> json) =>
+      PercentTimeMoving(
+          rank: json['rank'],
+          percentile: json['percentile'],
+          displayName: json['displayName'],
+          displayCategory: json['displayCategory'],
+          category: json['category'],
+          metadata: json['metadata'] ?? {},
+          value: json['value'] != null
+              ? double.parse(json['value'].toString())
+              : 0,
+          displayValue: json['displayValue'],
+          displayType: json['displayType']);
 
   Map<String, dynamic> toMap() => {
         'rank': rank,
