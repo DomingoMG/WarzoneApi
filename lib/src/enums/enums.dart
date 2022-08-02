@@ -1,4 +1,4 @@
-/// This file is a part of SoundVolumeView (https://github.com/DomingoMG/WarzoneApi).
+/// This file is a part of WarzoneAPi (https://github.com/DomingoMG/WarzoneApi).
 ///
 /// Copyright (c) 2022, Domingo Montesdeoca González <DomingoMG97@gmail.com>.
 /// All rights reserved.

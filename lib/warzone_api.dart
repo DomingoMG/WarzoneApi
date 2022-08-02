@@ -1,4 +1,4 @@
-/// This file is a part of SoundVolumeView (https://github.com/DomingoMG/WarzoneApi).
+/// This file is a part of WarzoneAPi (https://github.com/DomingoMG/WarzoneApi).
 ///
 /// Copyright (c) 2022, Domingo Montesdeoca González <DomingoMG97@gmail.com>.
 /// All rights reserved.
@@ -9,4 +9,6 @@ library warzone_api;
 
 export 'src/warzone_api_base.dart';
 export 'src/enums/enums.dart';
-export 'src/models/warzone_data.dart';
+export 'src/models/warzone_profile.dart';
+export 'src/models/warzone_matchs.dart';
+export 'src/models//warzone_search.dart';
