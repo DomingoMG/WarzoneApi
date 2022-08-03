@@ -14,6 +14,13 @@ import 'package:warzone_api/src/models/warzone_profile.dart';
 import 'package:warzone_api/src/models/warzone_search.dart';
 
 class WarzoneApi {
+  final Map<String, String> headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,PUT,PATCH,POST,DELETE",
+    "Access-Control-Allow-Headers":
+        "Origin, X-Requested-With, Content-Type, Accept"
+  };
+
   /// [fetchUser] Get all user information
   Future<WarzoneProfile> fetchUser(
       {required String username, Platform platform = Platform.atvi}) async {
@@ -22,7 +29,7 @@ class WarzoneApi {
             .replaceAll('#', '%23');
 
     Uri uri = Uri.parse(url);
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: headers);
 
     if (response.statusCode == 200) {
       // User OK
@@ -41,7 +48,7 @@ class WarzoneApi {
             .replaceAll('#', '%23');
 
     Uri uri = Uri.parse(url);
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: headers);
 
     if (response.statusCode == 200) {
       // Users OK
@@ -62,7 +69,7 @@ class WarzoneApi {
         '${Global.trackerApi}/matches/${platform.name.toLowerCase()}/$username'
             .replaceAll('#', '%23');
     Uri uri = Uri.parse(url);
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: headers);
     print(response.body);
 
     if (response.statusCode == 200) {
@@ -82,7 +89,7 @@ class WarzoneApi {
       {required String attributeIdFromMatch}) async {
     String url = '${Global.trackerApi}/matches/$attributeIdFromMatch';
     Uri uri = Uri.parse(url);
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: headers);
 
     if (response.statusCode == 200) {
       // Matches OK

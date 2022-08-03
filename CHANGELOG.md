@@ -1,3 +1,10 @@
+## 1.0.14
+- http => headers added
+
+## 1.0.13
+- Now you can get all the players in the game
+- Minor bugs fixed
+
 ## 1.0.12
 - matches => stats => Key check before getting value fixed
 
