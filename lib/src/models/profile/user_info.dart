@@ -32,7 +32,7 @@ class UserInfo {
       this.isSuspicious});
 
   factory UserInfo.fromMap(Map<String, dynamic> json) => UserInfo(
-      userId: json['userId'],
+      userId: json['userId'].toString(),
       isPremium: json['isPremium'],
       isVerified: json['isVerified'],
       isInfluencer: json['isInfluencer'],

@@ -35,7 +35,7 @@ class Teammates {
   String? platformUserId;
   String? platformUserHandle;
   String? clantag;
-  Stats? stats;
+  SegmentMetadataStats? stats;
 
   Teammates(
       {this.platformUserId, this.platformUserHandle, this.clantag, this.stats});
@@ -44,7 +44,7 @@ class Teammates {
     platformUserId = json['platformUserId'];
     platformUserHandle = json['platformUserHandle'];
     clantag = json['clantag'];
-    stats = json['stats'] != null ? Stats.fromMap(json['stats']) : null;
+    stats = json['stats'] != null ? SegmentMetadataStats.fromMap(json['stats']) : null;
   }
 
   Map<String, dynamic> toMap() {
@@ -59,15 +59,15 @@ class Teammates {
   }
 }
 
-class Stats {
+class SegmentMetadataStats {
   int? kills;
   int? deaths;
   int? placement;
   int? timePlayed;
 
-  Stats({this.kills, this.deaths, this.placement, this.timePlayed});
+  SegmentMetadataStats({this.kills, this.deaths, this.placement, this.timePlayed});
 
-  Stats.fromMap(Map<String, dynamic> json) {
+  SegmentMetadataStats.fromMap(Map<String, dynamic> json) {
     kills = json['kills'] is int ? json['kills'] : 0;
     deaths = json['deaths'] is int ? json['deaths'] : 0;
     placement = json['placement'] is int ? json['placement'] : 0;

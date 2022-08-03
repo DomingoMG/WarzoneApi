@@ -26,7 +26,7 @@ class PlatformInfo {
       platformUserId: json['platformUserId'],
       platformUserHandle: json['platformUserHandle'],
       platformUserIdentifier: json['platformUserIdentifier'],
-      platformAvatarUrl: json['platformAvatarUrl'],
+      platformAvatarUrl: json['avatarUrl'],
       additionalParameters: json['additionalParameters']);
 
   Map<String, dynamic> toMap() => {
@@ -34,7 +34,7 @@ class PlatformInfo {
         'platformUserId': platformUserId,
         'platformUserHandle': platformUserHandle,
         'platformUserIdentifier': platformUserIdentifier,
-        'platformAvatarUrl': platformAvatarUrl,
+        'avatarUrl': platformAvatarUrl,
         'additionalParameters': additionalParameters
       };
 }

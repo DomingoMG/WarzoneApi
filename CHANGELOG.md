@@ -1,3 +1,12 @@
+## 1.0.11
+- matches => stats => Key check before getting value 
+
+## 1.0.10
+- platform_info => fromMap fixed value
+
+## 1.0.9
+- user_info => id parse String
+
 ## 1.0.8
 - Key check before getting value
 
