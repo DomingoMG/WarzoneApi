@@ -83,12 +83,12 @@ class WarzoneApi {
     String url = '${Global.trackerApi}/matches/$attributeIdFromMatch';
     Uri uri = Uri.parse(url);
     final response = await http.get(uri);
-    print(response.body);
 
     if (response.statusCode == 200) {
       // Matches OK
       final dataJson = jsonDecode(response.body);
-      return WarzoneMatch.fromMap(dataJson['data']);
+      return WarzoneMatch.fromMap(dataJson['data'],
+          fetchDataFromOnlyMatch: true);
     } else {
       // Matches not found
       return WarzoneMatch.notFound();

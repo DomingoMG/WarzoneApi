@@ -18,6 +18,13 @@ class Segments {
   Segments(
       {this.type, this.attributes, this.metadata, this.expiryDate, this.stats});
 
+  factory Segments.fromListMap(Map<String, dynamic> json) => Segments(
+      type: json['type'],
+      attributes: SegmentAttributes.fromMap(json['attributes']),
+      metadata: SegmentMetadata.fromMap(json['metadata']),
+      expiryDate: json['expiryDate'],
+      stats: Stats.fromMap(json['stats']));
+
   factory Segments.fromMap(List json) => Segments(
       type: json[0]['type'],
       attributes: SegmentAttributes.fromMap(json[0]['attributes']),

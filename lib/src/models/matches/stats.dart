@@ -71,34 +71,76 @@ class Stats {
 
   static Stats fromMap(Map<String, dynamic> json) => Stats(
         kills: Kills.fromMap(json['kills']),
-        medalXp: json['medalXp'] != null ? MedalXp.fromMap(json['medalXp']) : null,
-        matchXp: json['matchXp'] != null ? MatchXp.fromMap(json['matchXp']) : null,
-        scoreXp: json['scoreXp'] != null ? ScoreXp.fromMap(json['scoreXp']) : null,
-        wallBangs: json['wallBangs'] != null ? WallBangs.fromMap(json['wallBangs']) : null,
+        medalXp:
+            json['medalXp'] != null ? MedalXp.fromMap(json['medalXp']) : null,
+        matchXp:
+            json['matchXp'] != null ? MatchXp.fromMap(json['matchXp']) : null,
+        scoreXp:
+            json['scoreXp'] != null ? ScoreXp.fromMap(json['scoreXp']) : null,
+        wallBangs: json['wallBangs'] != null
+            ? WallBangs.fromMap(json['wallBangs'])
+            : null,
         score: json['score'] != null ? Score.fromMap(json['score']) : null,
-        totalXp: json['totalXp'] != null ? TotalXp.fromMap(json['totalXp']) : null,
-        headshots: json['headshots'] != null ? Headshots.fromMap(json['headshots']) : null,
-        assists: json['assists'] != null ? Assists.fromMap(json['assists']) : null,
-        challengeXp: json['challengeXp'] != null ? ChallengeXp.fromMap(json['challengeXp']) : null,
-        scorePerMinute: json['scorePerMinute'] != null ? ScorePerMinute.fromMap(json['scorePerMinute']) : null,
-        distanceTraveled: json['distanceTraveled'] != null ? DistanceTraveled.fromMap(json['distanceTraveled']) : null,
-        teamSurvivalTime: json['teamSurvivalTime'] != null ? TeamSurvivalTime.fromMap(json['teamSurvivalTime']) : null,
+        totalXp:
+            json['totalXp'] != null ? TotalXp.fromMap(json['totalXp']) : null,
+        headshots: json['headshots'] != null
+            ? Headshots.fromMap(json['headshots'])
+            : null,
+        assists:
+            json['assists'] != null ? Assists.fromMap(json['assists']) : null,
+        challengeXp: json['challengeXp'] != null
+            ? ChallengeXp.fromMap(json['challengeXp'])
+            : null,
+        scorePerMinute: json['scorePerMinute'] != null
+            ? ScorePerMinute.fromMap(json['scorePerMinute'])
+            : null,
+        distanceTraveled: json['distanceTraveled'] != null
+            ? DistanceTraveled.fromMap(json['distanceTraveled'])
+            : null,
+        teamSurvivalTime: json['teamSurvivalTime'] != null
+            ? TeamSurvivalTime.fromMap(json['teamSurvivalTime'])
+            : null,
         deaths: Deaths.fromMap(json['deaths']),
         kdRatio: KdRatio.fromMap(json['kdRatio']),
-        bonusXp: json['bonusXp'] != null ? BonusXp.fromMap(json['bonusXp']) : null,
-        gulagDeaths: json['gulagDeaths'] != null ? GulagDeaths.fromMap(json['gulagDeaths']) : null,
-        timePlayed: json['timePlayed'] != null ? TimePlayed.fromMap(json['timePlayed']) : null,
-        executions: json['executions'] != null ? Executions.fromMap(json['executions']) : null,
-        gulagKills: json['gulagKills'] != null ? GulagKills.fromMap(json['gulagKills']) : null,
-        nearmisses: json['nearmisses'] != null ? Nearmisses.fromMap(json['nearmisses']) : null,
-        percentTimeMoving: json['percentTimeMoving'] != null ? PercentTimeMoving.fromMap(json['percentTimeMoving']) : null,
+        bonusXp:
+            json['bonusXp'] != null ? BonusXp.fromMap(json['bonusXp']) : null,
+        gulagDeaths: json['gulagDeaths'] != null
+            ? GulagDeaths.fromMap(json['gulagDeaths'])
+            : null,
+        timePlayed: json['timePlayed'] != null
+            ? TimePlayed.fromMap(json['timePlayed'])
+            : null,
+        executions: json['executions'] != null
+            ? Executions.fromMap(json['executions'])
+            : null,
+        gulagKills: json['gulagKills'] != null
+            ? GulagKills.fromMap(json['gulagKills'])
+            : null,
+        nearmisses: json['nearmisses'] != null
+            ? Nearmisses.fromMap(json['nearmisses'])
+            : null,
+        percentTimeMoving: json['percentTimeMoving'] != null
+            ? PercentTimeMoving.fromMap(json['percentTimeMoving'])
+            : null,
         miscXp: json['miscXp'] != null ? MiscXp.fromMap(json['miscXp']) : null,
-        longestStreak: json['longestStreak'] != null ? LongestStreak.fromMap(json['longestStreak']) : null,
-        teamPlacement: json['teamPlacement'] != null ? TeamPlacement.fromMap(json['teamPlacement']) : null,
-        damageDone: json['damageDone'] != null ? DamageDone.fromMap(json['damageDone']) : null,
-        damageTaken: json['damageTaken'] != null ? DamageTaken.fromMap(json['damageTaken']) : null,
-        damageDonePerMinute: json['damageDonePerMinute'] != null ? DamageDonePerMinute.fromMap(json['damageDonePerMinute']) : null,
-        placement: json['placement'] != null ? Placement.fromMap(json['placement']) : null,
+        longestStreak: json['longestStreak'] != null
+            ? LongestStreak.fromMap(json['longestStreak'])
+            : null,
+        teamPlacement: json['teamPlacement'] != null
+            ? TeamPlacement.fromMap(json['teamPlacement'])
+            : null,
+        damageDone: json['damageDone'] != null
+            ? DamageDone.fromMap(json['damageDone'])
+            : null,
+        damageTaken: json['damageTaken'] != null
+            ? DamageTaken.fromMap(json['damageTaken'])
+            : null,
+        damageDonePerMinute: json['damageDonePerMinute'] != null
+            ? DamageDonePerMinute.fromMap(json['damageDonePerMinute'])
+            : null,
+        placement: json['placement'] != null
+            ? Placement.fromMap(json['placement'])
+            : null,
       );
 
   Map<String, dynamic> toMap() => {
