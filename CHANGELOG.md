@@ -1,3 +1,6 @@
+## 1.0.12
+- matches => stats => Key check before getting value fixed
+
 ## 1.0.11
 - matches => stats => Key check before getting value 
 

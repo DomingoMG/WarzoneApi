@@ -87,7 +87,7 @@ class Stats {
         kdRatio: KdRatio.fromMap(json['kdRatio']),
         bonusXp: json['bonusXp'] != null ? BonusXp.fromMap(json['bonusXp']) : null,
         gulagDeaths: json['gulagDeaths'] != null ? GulagDeaths.fromMap(json['gulagDeaths']) : null,
-        timePlayed: TimePlayed.fromMap(json['timePlayed']),
+        timePlayed: json['timePlayed'] != null ? TimePlayed.fromMap(json['timePlayed']) : null,
         executions: json['executions'] != null ? Executions.fromMap(json['executions']) : null,
         gulagKills: json['gulagKills'] != null ? GulagKills.fromMap(json['gulagKills']) : null,
         nearmisses: json['nearmisses'] != null ? Nearmisses.fromMap(json['nearmisses']) : null,
