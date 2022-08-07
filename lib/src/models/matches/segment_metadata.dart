@@ -3,14 +3,16 @@ class SegmentMetadata {
   String? clanTag;
   int? placement;
   List<Teammates>? teammates;
+  String? profileUrl;
 
   SegmentMetadata(
-      {this.platformUserHandle, this.clanTag, this.placement, this.teammates});
+      {this.platformUserHandle, this.clanTag, this.placement, this.teammates, this.profileUrl});
 
   SegmentMetadata.fromMap(Map<String, dynamic> json) {
     platformUserHandle = json['platformUserHandle'];
     clanTag = json['clanTag'];
     placement = json['placement'] is int ? json['placement'] : 0;
+    profileUrl = json['profileUrl'];
     if (json['teammates'] != null) {
       teammates = <Teammates>[];
       json['teammates'].forEach((v) {
@@ -24,6 +26,7 @@ class SegmentMetadata {
     data['platformUserHandle'] = platformUserHandle;
     data['clanTag'] = clanTag;
     data['placement'] = placement;
+    data['profileUrl'] = profileUrl;
     if (teammates != null) {
       data['teammates'] = teammates!.map((v) => v.toMap()).toList();
     }

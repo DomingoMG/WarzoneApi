@@ -1,3 +1,6 @@
+## 1.0.15
+- Matches => Metadata => add profileUrl
+
 ## 1.0.14
 - http => headers added
 
