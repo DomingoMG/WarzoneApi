@@ -17,8 +17,10 @@ class WarzoneApi {
   final Map<String, String> headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,PUT,PATCH,POST,DELETE",
+    'Content-Type': 'application/json',
+    'Accept': '*/*',
     "Access-Control-Allow-Headers":
-        "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept"
   };
 
   /// [fetchUser] Get all user information

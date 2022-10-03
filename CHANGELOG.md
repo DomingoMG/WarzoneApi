@@ -1,5 +1,8 @@
+## 1.0.19
+- Matches => Attributes => added lifeTimeStats
+
 ## 1.0.15
-- Matches => Metadata => add profileUrl
+- Matches => Metadata => added profileUrl
 
 ## 1.0.14
 - http => headers added

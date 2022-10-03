@@ -6,7 +6,11 @@ class SegmentMetadata {
   String? profileUrl;
 
   SegmentMetadata(
-      {this.platformUserHandle, this.clanTag, this.placement, this.teammates, this.profileUrl});
+      {this.platformUserHandle,
+      this.clanTag,
+      this.placement,
+      this.teammates,
+      this.profileUrl});
 
   SegmentMetadata.fromMap(Map<String, dynamic> json) {
     platformUserHandle = json['platformUserHandle'];

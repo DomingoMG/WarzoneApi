@@ -12,6 +12,7 @@ import 'package:warzone_api/src/models/warzone_matchs.dart';
 import 'package:warzone_api/src/models/warzone_profile.dart';
 import 'package:warzone_api/src/models/warzone_search.dart';
 import 'package:warzone_api/src/warzone_api_base.dart';
+import 'package:warzone_api/src/models/matches/segments.dart';
 
 void main() async {
   /// Instance:
@@ -41,7 +42,7 @@ void main() async {
         await warzoneApi.fetchMatchesPlayedFromUser(
             username: 'RaiiLKilleR#8661004', platform: Platform.atvi);
     for (WarzoneMatch matchFound in matchesFounds) {
-      expect(matchFound.attributes?.id, isNotEmpty);
+      expect(matchFound.attributes?.toMap(), isNotEmpty);
       print(matchFound.toMap());
     }
   });
@@ -50,7 +51,9 @@ void main() async {
   test('Consult information of the game played', () async {
     WarzoneMatch matchFound = await warzoneApi.fetchMatchFromUser(
         attributeIdFromMatch: '10005806731254879321');
-    expect(matchFound.attributes?.id, isNotEmpty);
-    print(matchFound.toMap());
+    expect(matchFound.attributes?.toMap(), isNotEmpty);
+    for (Segments? segments in matchFound.listSegments!) {
+      print(segments?.attributes?.lifeTimeStats?.toMap());
+    }
   });
 }

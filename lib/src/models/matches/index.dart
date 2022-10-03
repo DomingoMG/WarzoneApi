@@ -41,3 +41,4 @@ export 'segment_metadata.dart';
 export 'segment_attributes.dart';
 export 'kd_histogram.dart';
 export 'stats.dart';
+export 'life_time_stats.dart';
